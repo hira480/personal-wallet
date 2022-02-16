@@ -1,0 +1,19 @@
+header{
+    font-family: 'Poppins', sans-serif;
+}
+.font-colour{
+    color: purple;
+    
+}
+.bg{
+    background-color: #F8F8F8;
+}
+.btn{
+    padding: 5px 15px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
