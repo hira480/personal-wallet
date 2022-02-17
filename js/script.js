@@ -20,31 +20,30 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     // else {
     //     errorMessae.style.display = 'none';
     // }
+
+    // total expenses
     const expenses = food + rent + cloths;
-
-
     const totalExpenseText = document.getElementById('total-expenses');
     const totalExpenses = totalExpenseText.innerText;
     totalExpenseText.innerText = expenses;
 
+    // balence
     const balanceTotal = income - expenses;
-
     const balanceText = document.getElementById('balence');
     const balanceSum = balanceText.innerText;
     balanceText.innerText = balanceTotal;
 
     document.getElementById('saving-btn').addEventListener('click', function () {
+        // percentage calculate
         const percentageField = document.getElementById('saving-percentage');
         const percentageAmount = parseInt(percentageField.value);
-
         const percentage = (balanceTotal * percentageAmount) / 100;
-
         const savingAmountText = document.getElementById('saving-amount');
         const savingAmount = savingAmountText.innerText;
         savingAmountText.innerText = percentage;
 
+        // remaining balance
         const remainingBalance = balanceTotal - percentage;
-
         const remainingBalanceText = document.getElementById('remaining-balance');
         const finalAmount = remainingBalanceText.innerText;
         remainingBalanceText.innerText = remainingBalance;
