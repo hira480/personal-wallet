@@ -13,8 +13,13 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const totalExpenses = totalExpenseText.innerText;
     totalExpenseText.innerText = expenses;
 
-    const balance = income - expenses;
+    const balanceTotal = income - expenses;
 
-    console.log(balance);
+    const balanceText = document.getElementById('balence');
+    const balanceSum = balanceText.innerText;
+    balanceText.innerText = balanceTotal;
+
+
+    // console.log(balanceTotal);
 
 })
