@@ -7,7 +7,21 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const rent = parseInt(rentField.value);
     const clothsField = document.getElementById('cloth-expense');
     const cloths = parseInt(clothsField.value);
+
+    // error message
+    // const inputField = document.getElementsByClassName('input');
+    // const errorMessae = document.getElementById('wrong-input');
+    // const notice = errorMessae.innerText;
+    // const input = inputField.value;
+    // if (input < 0 || input != 'number') {
+    //     errorMessae.style.display = 'block';
+    //     input = '';
+    // }
+    // else {
+    //     errorMessae.style.display = 'none';
+    // }
     const expenses = food + rent + cloths;
+
 
     const totalExpenseText = document.getElementById('total-expenses');
     const totalExpenses = totalExpenseText.innerText;
@@ -19,7 +33,6 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const balanceSum = balanceText.innerText;
     balanceText.innerText = balanceTotal;
 
-    // console.log(percentageAmount);
     document.getElementById('saving-btn').addEventListener('click', function () {
         const percentageField = document.getElementById('saving-percentage');
         const percentageAmount = parseInt(percentageField.value);
@@ -35,6 +48,5 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         const remainingBalanceText = document.getElementById('remaining-balance');
         const finalAmount = remainingBalanceText.innerText;
         remainingBalanceText.innerText = remainingBalance;
-        // console.log(remainingBalance);
     });
 });

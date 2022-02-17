@@ -28,7 +28,8 @@
                             <h5>Income</h5>
                         </label>
                         <div class="col-sm-10">
-                            <input id="income-field" type="text" class="form-control">
+                            <input id="income-field" type="text" class="form-control input"
+                                placeholder="input Positive Number">
                         </div>
                     </div>
                     <h2 class="text-center">Expenses</h2>
@@ -38,7 +39,8 @@
                                 <h5>Food</h5>
                             </label>
                             <div class="col-sm-10">
-                                <input id="food-expense" type="text" class="form-control">
+                                <input id="food-expense" type="text" class="form-control input"
+                                    placeholder="input Positive Number">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -46,7 +48,8 @@
                                 <h5>Rent</h5>
                             </label>
                             <div class="col-sm-10">
-                                <input id="rent-expense" type="text" class="form-control">
+                                <input id="rent-expense" type="text" class="form-control input"
+                                    placeholder="input Positive Number">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -54,9 +57,11 @@
                                 <h5>Cloths</h5>
                             </label>
                             <div class="col-sm-10">
-                                <input id="cloth-expense" type="text" class="form-control">
+                                <input id="cloth-expense" type="text" class="form-control input"
+                                    placeholder="input Positive Number">
                             </div>
                         </div>
+                        <p id="wrong-input" class="notify">Wrong input. Please enter Positive number. </p>
                         <button id="calculate-btn" class="btn ">Calculate</button>
                     </div>
                     <h4 class="text-center mt-2">Total Expenses: <span id="total-expenses">00</span> </h4>
@@ -66,7 +71,7 @@
                             <h5>Save%:</h5>
                         </label>
                         <div class="col-sm-10">
-                            <input id="saving-percentage" type="text" class="form-control">
+                            <input id="saving-percentage" type="text" class="form-control input" placeholder="% value">
                         </div>
                     </div>
                     <button id="saving-btn" class="btn">Save</button>
